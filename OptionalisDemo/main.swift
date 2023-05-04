@@ -1,11 +1,29 @@
-//
-//  main.swift
-//  OptionalisDemo
-//
-//  Created by Barbara Ann Pereira Lima on 09/01/23.
-//
 
-import Foundation
+//let myOptional: String?
 
-print("Hello, World!")
+struct MyOptional {
+    var property = 123
+    func method(){
+        print("I am struct`s method.")
+    }
+}
 
+let myOptional: MyOptional?
+
+myOptional =  MyOptional()
+
+print(myOptional?.property)
+
+
+
+/* let text: String = myOptional ?? " Este é um valor padrão"
+
+print(text)
+
+if let safeOptional = myOptional {
+    let text: String = safeOptional
+    let text2: String = safeOptional
+    print(safeOptional)
+} else {
+    print("myOptional was found to be nil.")
+} */
